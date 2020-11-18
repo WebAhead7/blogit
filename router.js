@@ -9,7 +9,7 @@ function router(request, response) {
     if (url === "/") {
       homeHandler(request, response);
     }
-    else if (url.includes('front-end')){ //loading front-end folder (html css js)
+    else if (url.includes('public')){ //loading front-end folder (html css js)
       publicHandler(request, response)
     }
     else if(url.includes('submit') && method == 'POST') {

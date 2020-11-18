@@ -14,21 +14,22 @@
             <legend class="input">Blogs input</legend>
             <p>
                 <label>Username</label>
-                <input type="text" id="myUsername" placeholder="Your Username.." required />
+                <input type="text" id="myUsername" name="username" placeholder="Your Username.." required />
             </p>
             <p>
                 <label>Name</label>
-                <input type="text" id="myName" placeholder="Your Name.." required />
+                <input type="text" id="myName" name="myname" placeholder="Your Name.." required />
             </p>
             <p>
                 <label class="textarea">Text Area</label>
-                <textarea id="myTextArea" rows="3" cols="80" placeholder="Your Text.." required></textarea>
+                <textarea id="myTextArea" name="textarea "rows="3" cols="80" placeholder="Your Text.." required></textarea>
 
             </p>
             <button type="submit" id="addBlog" value="addBlog">Add Blog</button>
         </fieldset>
     </form>
 
+    <script src="/public/createBlog.js"></script>
 </body>
 
 </html>

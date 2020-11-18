@@ -1,94 +1,47 @@
-*{
-    text-align: center;
-    margin: auto;
-    margin-top: 0 auto;
-    
-
+* {
+  text-align: center;
+  margin: auto;
+  margin-top: 0 auto;
 }
 
 body {
   background-color: indianred;
- 
-  }
-
-.img{
-    display: flex;
-    align-items: center;
-}
-  
-.container{
-    color: black;
-    font-size: 50px;
-    margin: 0 auto;
-    
 }
 
-a button{
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    
-}
-
-
-.buttons{
-    color: black;
-    height: auto;
-    font-size: 80px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 70%;
-    height: 30px;
-    display: block;
-    margin: 1em auto;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    font-size: 50px;
-    text-transform: uppercase;
-}
-
-body {
-  background-color: rgb(241, 207, 165);
-  width: 60%;
-  position: absolute;
-  left: 20%;
-}
-
-#navigation-bar {
-  border-style: solid;
-  border-color: black;
-  height: 200px;
-}
-
-#user-input {
+.img {
   display: flex;
-  justify-content: center;
-  border-style: solid;
-  border-color: black;
-  height: 600px;
-}
-#form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 300px;
-  /* padding: 20px;
-    margin: 10px; */
+  align-items: center;
 }
 
-/* #user-info {
-    border-style: solid;
-    border-color: black;
-    height: 200px;
-  } */
+.container {
+  color: black;
+  font-size: 50px;
+  margin: 0 auto;
+}
 
-#blogs {
-  border-style: solid;
-  border-color: black;
-  height: 500px;
+a button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.buttons {
+  color: black;
+  height: auto;
+  font-size: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 70%;
+  height: 30px;
+  display: block;
+  margin: 1em auto;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 50px;
+  text-transform: uppercase;
 }

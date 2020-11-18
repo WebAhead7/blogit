@@ -3,6 +3,7 @@ form.addEventListener("submit", event => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
+  console.log(data);
   fetch("/submit", {
     method: "POST",
     body: JSON.stringify(data),
