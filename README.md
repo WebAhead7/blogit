@@ -15,6 +15,8 @@ Databases also provide us with the ability to store multiple types of informatio
   <img src="/public/image2.jpeg" width=720px height=360px />
 </p>
 
+<h2 align="center"><a href="https://blogitkav.herokuapp.com/">ENJOY IN THE BLOGS</h2>
+
 web app source
 
 # Features:
