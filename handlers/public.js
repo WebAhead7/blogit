@@ -3,22 +3,11 @@ const path = require('path');
 const missingHandler = require('./missing');
 
 const types = {
-<<<<<<< HEAD
     html: "text/html",
     css: "text/css",
     js: "application/javascript",
     png: "image/png"
   };
-=======
-  html: 'text/html',
-  css: 'text/css',
-  js: 'application/javascript',
-  ico: 'image/png',
-  jpeg: 'image/jpeg',
-  jpg: 'image/jpg',
-  json: 'application/json',
-};
->>>>>>> f9bfa69bdf62a56e2dd5b11e64b35a4e2b235051
 
 function publicHandler(request, response) {
   const urlArray = request.url.split('.');
