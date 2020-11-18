@@ -12,5 +12,5 @@ Using JSON to store objects and arrays in Local Storage.
 Databases also provide us with the ability to store multiple types of information, such as numbers, dates, and more.
 
 <p align="center">
-  <img src="" width=720px height=360px />
+  <img src="src/public/image.png" width=720px height=360px />
 </p>
