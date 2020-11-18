@@ -3,11 +3,14 @@ const path = require('path');
 const missingHandler = require('./missing');
 
 const types = {
-    html: "text/html",
-    css: "text/css",
-    js: "application/javascript",
-    png: "image/png"
-  };
+  html: 'text/html',
+  css: 'text/css',
+  js: 'application/javascript',
+  ico: 'image/png',
+  jpeg: 'image/jpeg',
+  jpg: 'image/jpg',
+  json: 'application/json',
+};
 
 function publicHandler(request, response) {
   const urlArray = request.url.split('.');
@@ -15,8 +18,6 @@ function publicHandler(request, response) {
   const type = types[extension];
   const url = request.url;
   const filePath = path.join(__dirname, '..', url);
-  console.log(filePath);
-  console.log(urlArray);
 
   fs.readFile(filePath, (error, file) => {
     if (error) {

@@ -1,0 +1,59 @@
+* {
+  text-align: center;
+  margin: auto;
+  margin-top: 0%;
+}
+
+body {
+  background-color: indianred;
+}
+
+.blog {
+  height: 30px;
+  margin: 1em auto;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.username {
+  height: 30px;
+  margin: 1em auto;
+  font-size: 20px;
+}
+
+.name {
+  height: 30px;
+  margin: 1em auto;
+  font-size: 20px;
+}
+.textarea {
+  height: 30px;
+  margin: 1em auto;
+  font-size: 50px;
+}
+#myUsername {
+  margin: 1em;
+  width: 18%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+#myName {
+  margin: auto;
+  width: 20%;
+  border: 3px solid green;
+  padding: 10px;
+}
+#myTextArea {
+  border: 3px solid green;
+  height: 100px;
+  padding: 2px 23px 2px 30px;
+  background-color: #f5f5f5;
+  margin: auto;
+}
+
+#addBlog {
+  font-size: 20px;
+  height: 30px;
+  margin: 1em auto;
+}

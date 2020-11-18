@@ -1,25 +1,25 @@
 const missingHandler = require('./missing');
 const model = require('../src/models');
 
-function submitHandler(request, response) {
+function dataHandler(request, response) {
   let body = '';
   request.on('data', (chunk) => {
     body += chunk;
   });
   request.on('end', () => {
-    const data = JSON.parse(body);
     model
-      .createNewpost(data)
-      .then(() => {
-        response.writeHead(200);
-        response.end(JSON.stringify('batata'));
+      .getUserNamePost()
+      .then((data) => {
+        response.writeHead(200, { 'content-type': 'application/json' });
+        response.end(JSON.stringify(data));
       })
       .catch((error) => {
-        console.log('submit error: ' + error);
+        console.log('getdata error: ' + error);
         response.statusCode = 500;
         missingHandler(request, response);
+        return;
       });
   });
 }
 
-module.exports = submitHandler;
+module.exports = dataHandler;

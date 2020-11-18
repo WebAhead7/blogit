@@ -6,7 +6,6 @@ dotenv.config();
 
 // grab the URL for our local database
 let connectionString = process.env.DATABASE_URL;
-console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'test') {
   connectionString = process.env.TEST_DATABASE_URL;
 }
@@ -14,6 +13,7 @@ if (process.env.NODE_ENV === 'test') {
 // we can use this to query our database
 const db = new pg.Pool({
   connectionString,
+  ssl: { rejectUnauthorized: false },
 });
 
 // export the pool for use elsewhere on our server

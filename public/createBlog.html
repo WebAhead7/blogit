@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/createBlog.css" />
+    <title>Submit Blogs</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="create.css">
-</head>
-
-<body>
+  <body>
     <p class="blog">Create your Blog</p>
     <form>
-        <fieldset>
-            <legend class="input">Blogs input</legend>
-            <p>
-                <label class="username">Username  </label>
-                <input type="text" id="myUsername" placeholder="Your Username.." required />
-            </p>
-            <p>
-                <label class="name">Name  </label>
-                <input type="text" id="myName" placeholder="Your Name.." required />
-            </p>
-            <p>
-               <div class="textarea">Text Area</div>
-                <textarea id="myTextArea" rows="3" cols="80" placeholder="Your Text.." required></textarea>
-
-            </p>
-            <button type="submit" id="addBlog" value="addBlog">Add Blog</button>
-        </fieldset>
+      <fieldset>
+        <legend class="input">Blogs input</legend>
+        <p>
+          <label>Username</label>
+          <input
+            type="text"
+            class="username"
+            name="username"
+            id="myUsername"
+            placeholder="Your Username.."
+            required
+          />
+        </p>
+        <p>
+          <label>Your Name</label>
+          <input
+            type="text"
+            class="myname"
+            name="myname"
+            id="myName"
+            placeholder="Your Name.."
+            required
+          />
+        </p>
+        <p>
+          <label class="textarea">Blog it here</label>
+          <textarea
+            id="myTextArea"
+            rows="3"
+            class="post"
+            name="post"
+            cols="80"
+            placeholder="Your Text.."
+            required
+          ></textarea>
+        </p>
+        <button type="submit" class="submit" id="addBlog" value="addBlog">
+          Post blog
+        </button>
+      </fieldset>
     </form>
-
     <script src="/public/createBlog.js"></script>
-</body>
-
+  </body>
 </html>

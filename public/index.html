@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <link rel="stylesheet" href="/public/style.css">
-</head>
-
-<body>
-    <h1 class="container">Blogit</h1><br>
+    <link rel="stylesheet" href="/public/index.css" />
+    <title>Blog It</title>
+  </head>
+  <body>
+    <h1 class="container">Blogit</h1>
+    <br />
     <div class="countiner header">
-       <img src="../public/logo.jpg">
+      <img alt="logo" src="/public/img/logo.jpg" />
     </div>
 
-    <p class="buttons">choose buttom </p>
-    <a href="/public/createBlog.html">
-        <button type="submit" id="createblog" value="createblog">Create Blog</button>
-    </a>
-    <a href="/public/watchBlog.html">
-        <button type="submit" id="watchblog" value="watchblog">Watch Blog</button>
-    </a>
- 
-    <script src="public/index.js"></script>
-</body>
+    <h2>choose a button</h2>
+    <input
+      type="button"
+      id="createblog"
+      onClick="location.href='/public/createBlog.html'"
+      value="Create Blog"
+    />
+    <input
+      type="button"
+      id="watchblog"
+      onClick="location.href='/public/watchBlog.html'"
+      value="View All Blogs"
+    />
+  </body>
 </html>
-
-
-
-

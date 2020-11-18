@@ -1,43 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/watchBlog.css" />
+    <title>View Blogs</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="watch.css">
-    <title>Document</title>
-</head>
-
-<body>
-
-    <form>
-        <fieldset>
-            <legend class="posts">Blog Posts</legend>
-
-
-            <p>
-                <label class="allblogs">All Blogs</label>
-
-                <div class="serch">
-                    <input class="text" placeholder="Search..">
-                </div>
-    
-                <textarea id="blogsArea" rows="3" cols="80" placeholder="All Blogs.." required></textarea>
-               
-            <div class="container">
-                <p></p>
-            </div></fieldset>
-
-            </p>
-
-            <button type="submit" id="Search" value="Search">Search</button>
-
-        </fieldset>
-    </form>
-
-        </form>
-    </div>
-    <script src="index.js"></script>
-</body>
-
+  <body>
+    <table style="width: 80%">
+      <tr>
+        <th>Username</th>
+        <th>Name</th>
+        <th>Post</th>
+      </tr>
+    </table>
+    <script src="/public/watchBlog.js"></script>
+  </body>
 </html>
