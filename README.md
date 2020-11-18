@@ -12,5 +12,29 @@ Using JSON to store objects and arrays in Local Storage.
 Databases also provide us with the ability to store multiple types of information, such as numbers, dates, and more.
 
 <p align="center">
-  <img src="/public/image2.jpeg" width=720px height=360px />
+  <img src="/src/public/image.png" width=720px height=360px />
 </p>
+
+web app source
+
+# Features:
+- Add new blogs to all users.
+- Can search for previous blogs.
+- view all blogs to all users.
+- Easy to use at any time.
+
+# Built With
+- HTML
+- CSS
+- JavaScript
+
+# Getting Started
+- In the main page just type a usernmae, and the blogs.
+- In the search you can see all blogs.
+- You can return to the main page by clicking on the "Home" icon.
+
+# Contact US
+-: @GitHub
+- : @GitHub
+-: @GitHub
+- : @GitHub
