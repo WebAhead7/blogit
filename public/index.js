@@ -29,7 +29,9 @@ form.addEventListener("submit", (event) => {
 
 })
 
-//testing the container of the blogs (watchBlog.html)-->(this code must be in ".then" of the get fetch from server )
+
+
+// //testing the container of the blogs (watchBlog.html)-->(this code must be in ".then" of the get fetch from server )
 // const arr = [{ username: "jerry", name: "jiries", blog: "hello world" }];
 // arr.forEach(user => {
 //     console.log(user);
@@ -70,7 +72,7 @@ fetch("/getdata")
 
             const paraDiv = document.createElement('div');
             paraDiv.id = "div2";
-            paraUserName.style.border = "red";
+
             paraUserName.textContent = user.username;
             paraName.textContent = user.name;
             paraBlog.textContent = user.blog;
