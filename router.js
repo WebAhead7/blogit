@@ -6,20 +6,13 @@ const submitHandler = require('./handlers/submit');
 function router(request, response) {
   const url = request.url;
   const method = request.method;
-  if (method === 'GET') {
-    if (url === '/') {
-      homeHandler(request, response);
-    } else if (url.includes('front-end')) {
-      //loading front-end folder (html css js)
-      publicHandler(request, response);
-    }
-  } else if (method === 'POST') {
-    if (url.includes('submit')) {
-      submitHandler(request, response);
-    }
-    //   else if(url.includes('getdata')) {
-    //     getdataHandler(request, response);
-    // }
+  console.log('router: ' + url);
+  if (url === '/') {
+    homeHandler(request, response);
+  } else if (url.includes('public')) {
+    publicHandler(request, response);
+  } else if (url.includes('submit') && method === 'POST') {
+    submitHandler(request, response);
   } else {
     missingHandler(request, response);
   }

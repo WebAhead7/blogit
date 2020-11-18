@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="watch.css">
     <title>Document</title>
 </head>
 
@@ -17,13 +18,14 @@
                 </datalist>
             </div>
            <button type="submit">submit</button>
-        </form>
-    </div>
 
-    <form>
-        <fieldset>
-            <legend>Blog Posts</legend>
+           <fieldset>
+            <legend class="posts">Blog Posts</legend>
+            
             <p>
+                <label class="allblogs">All Blogs</label>
+    
+                <textarea id="blogsArea" rows="3" cols="80" placeholder="All Blogs.." required></textarea>
                 <label>All Blogs</label>
             <div class="container">
                 <p></p>
@@ -31,7 +33,9 @@
 
             </p>
         </fieldset>
-    </form>
+
+        </form>
+    </div>
 </body>
 
 </html>
