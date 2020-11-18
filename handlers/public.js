@@ -1,30 +1,32 @@
 const fs = require('fs');
-const path = require('path')
-const missingHandler = require('./missing')
+const path = require('path');
+const missingHandler = require('./missing');
 
 const types = {
     html: "text/html",
     css: "text/css",
     js: "application/javascript",
+    png: "image/png"
   };
 
-function publicHandler(request, response){
-    const url = request.url;
-      const urlArray = request.url.split(".");
-      const extension = urlArray[1]; 
-      const type = types[extension]; 
+function publicHandler(request, response) {
+  const urlArray = request.url.split('.');
+  const extension = urlArray[1];
+  const type = types[extension];
+  const url = request.url;
+  const filePath = path.join(__dirname, '..', url);
+  console.log(filePath);
+  console.log(urlArray);
 
-      const filePath=path.join(__dirname,"..", url)
-      console.log(url)
-      fs.readFile(filePath,(err,data) => {
-        if (err){
-            missingHandler(request,response)
-            return 
-        }
-   
-    response.writeHead(200, { "content-type": type });
-    response.end(data)
-  })
+  fs.readFile(filePath, (error, file) => {
+    if (error) {
+      console.log('public error: ' + error);
+      missingHandler(request, response);
+    } else {
+      response.writeHead(200, { 'content-type': type });
+      response.end(file);
+    }
+  });
 }
 
 module.exports = publicHandler;
