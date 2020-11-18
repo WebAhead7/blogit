@@ -29,22 +29,30 @@ form.addEventListener("submit", (event) => {
 
 })
 
-const arr = [{ username: "jirkh", name: "jiries", blog: "hello world" }];
+//testing the container of the blogs (watchBlog.html)-->(this code must be in ".then" of the get fetch from server )
+const arr = [{ username: "jerry", name: "jiries", blog: "hello world" }];
 arr.forEach(user => {
     console.log(user);
     const paraBlog = document.createElement('p');
     const paraUserName = document.createElement('div');
+    const paraName = document.createElement('div');
+
     const paraDiv = document.createElement('div');
     paraDiv.id = "div2";
-    const paraContainer = document.createElement('.container');
+    paraUserName.style.border = "red";
+    paraUserName.textContent = user.username;
+    paraName.textContent = user.name;
+    paraBlog.textContent = user.blog;
+    // const paraContainer = document.createElement('.container');
     paraDiv.appendChild(paraBlog);
     paraDiv.appendChild(paraUserName);
-    paraContainer.appendChild(paraDiv);
+    paraDiv.appendChild(paraName);
+    // paraContainer.appendChild(paraDiv);
     const container = document.querySelector(".container");
-    container.appendChild(paraContainer);
-
+    container.appendChild(paraDiv);
 
 });
+
 //receive blogs from the server
 // fetch("/getdata")
 //     .then(response => {
@@ -54,7 +62,27 @@ arr.forEach(user => {
 //     })
 
 //     .then(data => {
+// arr.forEach(user => {
+//     console.log(user);
+//     const paraBlog = document.createElement('p');
+//     const paraUserName = document.createElement('div');
+//     const paraName = document.createElement('div');
 
+//     const paraDiv = document.createElement('div');
+//     paraDiv.id = "div2";
+//     paraUserName.style.border = "red";
+//     paraUserName.textContent = user.username;
+//     paraName.textContent = user.name;
+//     paraBlog.textContent = user.blog;
+
+//     paraDiv.appendChild(paraBlog);
+//     paraDiv.appendChild(paraUserName);
+//     paraDiv.appendChild(paraName);
+
+//     const container = document.querySelector(".container");
+//     container.appendChild(paraDiv);
+
+// });
 
 
 
@@ -65,20 +93,20 @@ arr.forEach(user => {
 //     .catch(error => console.log(error));
 
 
-const form = document.querySelector("form");
-form.addEventListener("submit", event => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData);
-    fetch("/submit", {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: { "content-type": "application/json" },
-    })
-        .then(response => {
-            if (!response.ok) throw new Error(response.status);
-            return response.json();
-        })
-        .then(json => console.log(json))
-        .catch(error => console.error(error));
-});
+// const form = document.querySelector("form");
+// form.addEventListener("submit", event => {
+//     event.preventDefault();
+//     const formData = new FormData(event.target);
+//     const data = Object.fromEntries(formData);
+//     fetch("/submit", {
+//         method: "POST",
+//         body: JSON.stringify(data),
+//         headers: { "content-type": "application/json" },
+//     })
+//         .then(response => {
+//             if (!response.ok) throw new Error(response.status);
+//             return response.json();
+//         })
+//         .then(json => console.log(json))
+//         .catch(error => console.error(error));
+// });
