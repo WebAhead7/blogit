@@ -12,7 +12,7 @@ Using JSON to store objects and arrays in Local Storage.
 Databases also provide us with the ability to store multiple types of information, such as numbers, dates, and more.
 
 <p align="center">
-  <img src="/src/public/image.png" width=720px height=360px />
+  <img src="/src/public/image2.jpeg" width=720px height=360px />
 </p>
 
 web app source
@@ -34,7 +34,7 @@ web app source
 - You can return to the main page by clicking on the "Home" icon.
 
 # Contact US
--: @GitHub
-- : @GitHub
--: @GitHub
-- : @GitHub
+- mjmajadly: @GitHub
+- myassar1211: @GitHub
+- muhkham: @GitHub
+- jiries-khazen: @GitHub
