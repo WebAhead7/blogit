@@ -17,7 +17,7 @@ Databases also provide us with the ability to store multiple types of informatio
 
 <h2 align="center"><a href="https://blogitkav.herokuapp.com/">ENJOY IN THE BLOGS</h2>
 
-web app source
+
 
 # Features:
 - Add new blogs to all users.
