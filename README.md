@@ -29,6 +29,7 @@ Databases also provide us with the ability to store multiple types of informatio
 - HTML
 - CSS
 - JavaScript
+- PLpgSQL
 
 # Getting Started
 - In the main page just type a usernmae, and the blogs.
