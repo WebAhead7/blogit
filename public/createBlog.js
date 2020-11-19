@@ -2,6 +2,7 @@ const form = document.querySelector('form');
 const username = document.querySelector('.username');
 const myname = document.querySelector('.myname');
 const post = document.querySelector('.post');
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const myObj = {

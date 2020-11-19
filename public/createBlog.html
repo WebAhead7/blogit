@@ -7,16 +7,16 @@
     <title>Submit Blogs</title>
   </head>
 
-  <body>
+  <body onload="document.form1.post.focus()">
     <br />
-    <div class="countiner header">
+    <div class="countinerheader">
       <a href="/public/index.html">
         <img alt="logo" src="/public/img/logo.jpg" />
       </a>
     </div>
 
     <p class="blog">Create your Blog</p>
-    <form>
+    <form name="form1" class="countinerheader">
       <fieldset>
         <legend class="input">Blogs input</legend>
         <p>
@@ -28,6 +28,8 @@
             id="myUsername"
             placeholder="Your Username.."
             required
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,15}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and 4-15 characters in length"
           />
         </p>
         <p>
@@ -39,6 +41,8 @@
             id="myName"
             placeholder="Your Name.."
             required
+            pattern="(?=.*[a-z])(?=.*[A-Z]).{2,15}"
+            title="Must contain at one uppercase and one lowercase letter, and 2-15 characters in length"
           />
         </p>
         <p>
